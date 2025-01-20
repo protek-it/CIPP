@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: '16' # or the version your project requires
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: List Node Modules
         run: ls -la node_modules
       - name: Build And Deploy
