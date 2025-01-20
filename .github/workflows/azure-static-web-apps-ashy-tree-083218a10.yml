@@ -26,7 +26,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install --prefer-offline
       - name: Install ESLint Prettier Plugin
-        run: yarn add eslint-plugin-prettier eslint-config-prettier --dev
+        run: yarn add eslint-plugin-prettier eslint-config-prettier prettier --dev
       - name: Install Peer Dependencies
         run: yarn add @babel/runtime @types/react stylis csstype --dev
       - name: List Node Modules
