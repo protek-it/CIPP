@@ -24,7 +24,11 @@ jobs:
         with:
           node-version: '16' # or the version your project requires
       - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+        run: yarn install --prefer-offline
+      - name: Install ESLint Prettier Plugin
+        run: yarn add eslint-plugin-prettier --dev
+      - name: Install Peer Dependencies
+        run: yarn add @babel/runtime @types/react stylis csstype --dev
       - name: List Node Modules
         run: ls -la node_modules
       - name: Build And Deploy
