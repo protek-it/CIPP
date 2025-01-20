@@ -22,7 +22,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # or the version your project requires
+          node-version: '18.17.0' # Updated Node.js version
       - name: Install Dependencies
         run: yarn install --prefer-offline
       - name: Install ESLint Prettier Plugin
